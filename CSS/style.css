@@ -1,0 +1,114 @@
+:root {
+  --primary-linear-gradient: linear-gradient(
+    90deg,
+    #f860d8 0.06%,
+    #5c4bf6 50.73%,
+    #45bcff 100.06%
+  );
+  --section-padding: 80px;
+}
+body {
+  background-color: #0e0e11;
+  background-image: url(../Images/stardust.png);
+}
+
+.navbar {
+  backdrop-filter: blur(50px);
+}
+.navbar a {
+  font-weight: bold;
+  color: white !important;
+  font-size: 1.1rem;
+}
+a.active {
+  background: var(--primary-linear-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+}
+
+.navbar a:hover {
+  background: var(--primary-linear-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+}
+.info {
+  padding-block: var(--section-padding);
+  margin-top: 50px;
+}
+.info img {
+  border-radius: 50%;
+}
+.info p {
+  line-height: 1.6;
+}
+.card svg {
+  height: 80px;
+}
+.card {
+  background: transparent;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.9);
+  transition: 0.3s;
+}
+.card h5 {
+  max-width: 200px;
+}
+.card p {
+  line-height: 1.6;
+}
+.card:hover {
+  scale: 1.1;
+}
+.services {
+  padding-block: var(--section-padding);
+}
+@media (max-width: 768px) {
+  .card h5 {
+    margin: 10px auto;
+  }
+}
+@media (max-width: 768px) {
+  .info .row {
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  .card {
+    text-align: center;
+  }
+}
+.links svg {
+  height: 30px;
+}
+.projects {
+  padding-block: var(--section-padding);
+}
+a {
+  list-style: none !important;
+  text-decoration: none !important;
+}
+li {
+  list-style: none !important;
+}
+footer {
+  padding-top: var(--section-padding);
+}
+footer a svg {
+  font-size: 2rem;
+  padding: 10px;
+  color: white;
+  transition: 0.3s;
+}
+
+footer a:hover svg {
+  background-color: #45bcff;
+  border-radius: 50%;
+}
+footer .links li a:hover {
+  color: #45bcff !important;
+}
+
+.card-last {
+  height: 100%;
+}
